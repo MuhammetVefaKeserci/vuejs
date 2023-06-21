@@ -23,8 +23,9 @@ export default {
       fetch(`http://localhost:8080/weather/${this.city}`)
         .then(response => response.json())
         .then(data => {
+          const temperature = data.main.temp - 273.15;
           this.weatherData = {
-            temperature: data.main.temp,
+            temperature: temperature.toFixed(2),
             description: data.weather[0].description
           };
         })
