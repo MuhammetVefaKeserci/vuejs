@@ -61,8 +61,5 @@ export default {
   background-color: #33805b;
 }
 
-body {
-  background-image: url("https://example.com/bulut-resmi.jpg"); /* Bulut resminin URL'sini buraya yerleştirin */
-  background-size: cover;
-}
+
 </style>
