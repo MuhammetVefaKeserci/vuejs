@@ -48,7 +48,7 @@ export default {
         .catch(error => {
           console.error(error);
         });
-    
+  
     },
     getCityByDate() {
       fetch(`http://localhost:8080/weather/cities/${this.selectedDate}`)
